@@ -1,5 +1,5 @@
-wal -i $(swww query | grep -o -E 'image: .+' | tail -c+8)
 
+wal -i $(swww query | grep -o -m 1 -E 'image: .+' | tail -c+8)
 ~/.config/mako/reload-theme.sh
 ~/.config/obsidian/reload-theme.sh
 ~/.config/waybar/reload-theme.sh

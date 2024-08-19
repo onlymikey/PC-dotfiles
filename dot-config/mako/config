@@ -1,0 +1,18 @@
+text-color=#a3c5c0
+background-color=#0F130C
+progress-color=over #a3c5c0
+width=256
+height=88
+margin=12
+padding=8
+border-radius=12
+default-timeout=6000
+border-size=0
+
+[mode=do-not-disturb]
+invisible=1
+
+[urgency=critical]
+background-color=#29625B
+progress-color=over #a3c5c0
+invisible=0

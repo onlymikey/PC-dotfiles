@@ -58,7 +58,7 @@
 		"on-scroll-down": "hyprctl dispatch workspace e-1"
 	},
 	"custom/wlogout": {
-		"format": "",
+		"format": "⏻",
 		"on-click": "~/.config/scripts/menus/system-actions.sh",
 		"tooltip": false
 	}
