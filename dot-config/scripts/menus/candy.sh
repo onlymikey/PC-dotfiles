@@ -1,6 +1,8 @@
+
 actions="neofetch
 cava
-cbonsai"
+cbonsai
+scrcpy"
 
 action=$(echo "$actions" | wofi --show dmenu)
 
@@ -13,4 +15,13 @@ case $action in
 		;;
 	cbonsai)
 		kitty --class candy_cbonsai -o window_padding_width=20 cbonsai -l -b 2 -L 40 -t 0.06
+		;;
+	scrcpy)
+		# Verifica si el dispositivo ADB está conectado y ejecuta scrcpy
+		if adb devices | grep -q "device$"; then
+			scrcpy
+		else
+			notify-send "No device detected" "Please connect an Android device."
+		fi
+		;;
 esac
