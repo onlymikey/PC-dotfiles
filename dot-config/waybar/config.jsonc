@@ -27,13 +27,14 @@
 		}
 	},
 	"clock": {
-		"format": "  {:%I:%M %p}",
+		"format": "󰥔  {:%I:%M %p}",
 		"on-click": "gnome-calendar"
 	},
 	"network": {
 		"format-wifi": "   {essid}",
-		"format-ethernet": "   {ifname}",
-		"tooltip-format-wifi": "Strength: {signalStrength}%"
+		"format-ethernet": "󰈀   Ethernet",
+		"tooltip-format-wifi": "Strength: {signalStrength}%\nIP: {ipaddr}",
+		"tooltip-format-ethernet": "Interface: {ifname}\nIP: {ipaddr}"
 	},
 	"pulseaudio": {
 		"format": "   {volume}%",
@@ -41,7 +42,7 @@
 		"on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
 	},
 	"mpris": {
-		"format": "{title} - {artist}",
+		"format": "󰎇 {title} - {artist} 󰎇",
 		"title-len": 30,
 		"artist-len": 30,
 		"tooltip-format": "{dynamic}",
@@ -52,13 +53,14 @@
 		"format": "{icon}",
 		"format-icons": {
 			"scratchpad": "S",
-			"ecratchpad": "E"
+			"ecratchpad": "E",
+			"dcratchpad": "D"
 		},
 		"on-scroll-up": "hyprctl dispatch workspace e+1",
 		"on-scroll-down": "hyprctl dispatch workspace e-1"
 	},
 	"custom/wlogout": {
-		"format": "⏻",
+		"format": "󰤄",
 		"on-click": "~/.config/scripts/menus/system-actions.sh",
 		"tooltip": false
 	}

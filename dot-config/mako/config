@@ -1,6 +1,6 @@
-text-color=#a3c5c0
-background-color=#0F130C
-progress-color=over #a3c5c0
+text-color=#c49cc3
+background-color=#15121d
+progress-color=over #c49cc3
 width=256
 height=88
 margin=12
@@ -13,6 +13,6 @@ border-size=0
 invisible=1
 
 [urgency=critical]
-background-color=#29625B
-progress-color=over #a3c5c0
+background-color=#4C6268
+progress-color=over #c49cc3
 invisible=0
